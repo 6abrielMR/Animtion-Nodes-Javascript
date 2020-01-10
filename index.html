@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animation</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Animations</h1>
+        </div>
+    </header>
+    <main>
+        <div id="main_content">
+        </div>
+        <div class="opcs">
+            <div class="add-nodes">
+                <div class="title add" onclick="stateBoxs(0)">
+                    <h2>Añadir Nodo</h2>
+                </div>
+                <div class="set-id set-add">
+                    <input type="text" name="add" placeholder="Escribe el número del nodo">
+                </div>
+                <input type="button" name="btn-add" value="Agregar" onclick="addNodeView()">
+            </div>
+            <div class="remove-nodes">
+                <div class="title remove" onclick="stateBoxs(1)">
+                    <h2>Eliminar Nodo</h2>
+                </div>
+                <div class="set-id set-remove">
+                    <input type="text" name="remove" placeholder="Escribe el número del nodo">
+                </div>
+                <input type="button" name="btn-remove" value="Eliminar" onclick="removeNodeView()">
+            </div>
+        </div>
+        <script src="js/const.js"></script>
+        <script src="js/exceptions.js"></script>
+        <script src="js/animations.js"></script>
+        <script src="js/main.js"></script>
+    </main>
+</body>
+</html>
